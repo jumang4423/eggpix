@@ -41,9 +41,38 @@ eggeyeは視覚、jumangoは聴覚を扱い、kidpixの思想を尊重しなが�
 故に、このアプリは、そういった傾向のある人間の成長する居場所になり得るし、またそれを求める人間の希望になるのではないかと思う。  
 そして現代的に解釈し、未来を考えることで、より人を幸せにし、温かいものが作れるのではないか。
 
+## 起動手順
+
+### 必要な環境
+
+0. [Node.js](https://nodejs.org/)をダウンロード
+
+1. リポジトリをクローン (ダウンロード)
+
+```bash
+git clone https://github.com/your-username/eggpix.git
+cd eggpix
+```
+
+2. ライブラリのインストール
+
+```bash
+npm install
+```
+
+3. 起動
+
+```bash
+npm run dev
+```
+
 ## 技術
 
 UIの自由度と開発の敷居を下げるため、以下の技術選定をした:
+
+- **Node.js** (https://nodejs.org/)
+
+  - 依存関係解決・ビルドの簡略化
 
 - **p5.js** (https://p5js.org/)
 

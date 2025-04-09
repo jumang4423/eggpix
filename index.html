@@ -1,1 +1,70 @@
-<div>new world starts from here</div>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eggpix</title>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+        background: #afa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      canvas {
+        display: block;
+        margin: auto;
+      }
+      #audio-permission-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+      }
+      #audio-permission-overlay.visible {
+        display: flex;
+      }
+      .permission-content {
+        background: white;
+        padding: 2rem;
+        border-radius: 8px;
+        text-align: center;
+        max-width: 80%;
+      }
+      .permission-content button {
+        margin-top: 1rem;
+        padding: 0.5rem 1rem;
+        font-size: 1.1rem;
+        background: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+      .permission-content button:hover {
+        background: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- this is for web browsers -->
+    <div id="audio-permission-overlay">
+      <div class="permission-content">
+        <h2>Audio Permission Required</h2>
+        <p>Click the button below to enable audio for the best experience!</p>
+        <button id="enable-audio-btn">Enable Audio</button>
+      </div>
+    </div>
+    <script type="module" src="/src/web.ts"></script>
+  </body>
+</html>

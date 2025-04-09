@@ -1,0 +1,10 @@
+[
+  {
+    "id": "buf_sample",
+    "file": "rnbo/granular/buf.wav"
+  },
+  {
+    "id": "buf_win",
+    "file": "rnbo/granular/sinwindowExp055_48000.wav"
+  }
+]

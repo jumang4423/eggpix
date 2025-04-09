@@ -1,5 +1,5 @@
 ---
-description: this document is about p5.js usage on this project. 
+description: this document is about p5.js usage on this project.
 globs: 
 alwaysApply: false
 ---
@@ -8,4 +8,4 @@ alwaysApply: false
 We use p5.js to draw this whole app.
 
 # overall
-screen size is 640x480 or more? 
+screen size is 800 x 600 or more? 

@@ -1,0 +1,35 @@
+{
+  "name": "eggpix",
+  "private": true,
+  "version": "0.0.1",
+  "description": "A creative drawing application inspired by KidPix",
+  "main": "dist-electron/main/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "NODE_ENV=development vite --force",
+    "dev:web": "NODE_ENV=development vite --config vite.web.config.ts",
+    "build": "tsc && vite build && electron-builder",
+    "build:web": "tsc && vite build --config vite.web.config.ts",
+    "preview": "vite preview",
+    "preview:web": "vite preview --config vite.web.config.ts",
+    "lint": "eslint . --ext ts --report-unused-disable-directives --max-warnings 0"
+  },
+  "dependencies": {
+    "@rnbo/js": "1.0.1",
+    "is-electron": "^2.2.2",
+    "p5": "^1.9.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/p5": "^1.7.6",
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
+    "@typescript-eslint/parser": "^6.19.0",
+    "electron": "^28.1.0",
+    "electron-builder": "^24.9.1",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.12",
+    "vite-plugin-electron": "^0.28.0",
+    "vite-plugin-electron-renderer": "^0.14.5"
+  }
+}
